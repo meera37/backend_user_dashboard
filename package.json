@@ -1,0 +1,31 @@
+{
+  "name": "backend_user_management_dashboard",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@feathersjs/authentication": "^5.0.34",
+    "@feathersjs/authentication-local": "^5.0.34",
+    "@feathersjs/configuration": "^5.0.34",
+    "@feathersjs/errors": "^5.0.34",
+    "@feathersjs/express": "^5.0.34",
+    "@feathersjs/feathers": "^5.0.34",
+    "@feathersjs/hooks": "^0.9.0",
+    "@feathersjs/socketio": "^5.0.34",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "feathers-knex": "^8.0.1",
+    "knex": "^3.1.0",
+    "pg": "^8.16.3",
+    "winston": "^3.17.0"
+  }
+}
