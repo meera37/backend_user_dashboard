@@ -1,6 +1,7 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-module.exports = {
+export default {
   development: {
     client: process.env.DB_CLIENT,
     connection: {
@@ -14,7 +15,6 @@ module.exports = {
       directory: './migrations'
     }
   },
-
   production: {
     client: process.env.DB_CLIENT,
     connection: {
@@ -23,13 +23,14 @@ module.exports = {
       user: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      ssl: { rejectUnauthorized: false }   
+      ssl: { rejectUnauthorized: false }
     },
     migrations: {
       directory: './migrations'
     }
   }
 };
+
 
 
 // require('dotenv').config();

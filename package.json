@@ -4,12 +4,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate": "knex migrate:latest --knexfile knexfile.js",
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "migrate": "knex migrate:latest --esm --knexfile knexfile.js",
   "postinstall": "npm run migrate"
-  },
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
